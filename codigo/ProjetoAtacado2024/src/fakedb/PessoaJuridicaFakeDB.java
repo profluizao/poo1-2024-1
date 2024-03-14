@@ -5,18 +5,14 @@ import java.util.ArrayList;
 
 import dominio.PessoaJuridica;
 
-public class PessoaJuridicaFakeDB {
-    private ArrayList<PessoaJuridica> lista;
-
-    public ArrayList<PessoaJuridica> getLista() {
-        return lista;
-    }
+public class PessoaJuridicaFakeDB extends BaseFakeDB<PessoaJuridica> {
 
     public PessoaJuridicaFakeDB() {
-        this.preencherLista();
+        super();
     }
 
-    private void preencherLista(){
+    @Override
+    protected void preencherLista(){
         if (this.lista == null){
             this.lista= new ArrayList<>();
 
