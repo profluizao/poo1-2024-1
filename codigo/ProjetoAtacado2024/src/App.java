@@ -1,9 +1,9 @@
-import swing.Helloworld;
+import swing.JanelaInicialFrm;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Helloworld hello = new Helloworld();
-        hello.Executar();
+        JanelaInicialFrm frm = new JanelaInicialFrm();
+        frm.Exibir();
     }
 }
 
